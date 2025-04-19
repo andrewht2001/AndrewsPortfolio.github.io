@@ -5015,7 +5015,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 45%;
+			width: 35%;
 			min-width: 25rem;
 			border-radius: 0;
 		}
@@ -5155,7 +5155,19 @@ input, select, textarea {
 			-ms-object-position: right;
 			object-position: right;
 		}
+		.spotlight.style1.video-position-left .video video {
+			-moz-object-position: left;
+			-webkit-object-position: left;
+			-ms-object-position: left;
+			object-position: left;
+		}
 
+		.spotlight.style1.video-position-right .video video {
+			-moz-object-position: right;
+			-webkit-object-position: right;
+			-ms-object-position: right;
+			object-position: right;
+		}
 /* Spotlight (style2) */
 
 	.spotlight.style2 {
