@@ -3485,9 +3485,6 @@ input, select, textarea {
 	.banner .content {
 		position: absolute;
 		z-index: 2;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
 		color: rgb(255, 255, 255);
 		text-align: center;
 	}
