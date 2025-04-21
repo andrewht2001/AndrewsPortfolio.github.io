@@ -8525,7 +8525,7 @@ input, select, textarea {
 	margin: 0; /* Remove default margin */
 	padding: 0; /* Remove default padding */
 	color: black; /* Set text color to white */
-	font-size: 2rem; /* Set font size for headings */
+	font-size: 1.7rem; /* Set font size for headings */
 	}
 
 .heading.style1 .row2 {
@@ -8533,6 +8533,8 @@ input, select, textarea {
   display: flex; /* Use flexbox for layout */
   flex-direction: row; /* Arrange columns horizontally */
   justify-content: right; /* Distribute columns evenly */
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
 }
   
 .heading.style1 .row2 .column {
