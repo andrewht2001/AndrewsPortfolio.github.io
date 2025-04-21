@@ -4647,6 +4647,18 @@ input, select, textarea {
 		opacity: 0;
 	}
 
+	.spotlight.onload-content-fade-in .video {
+		-moz-transition: opacity 0.75s ease-in-out;
+		-webkit-transition: opacity 0.75s ease-in-out;
+		-ms-transition: opacity 0.75s ease-in-out;
+		transition: opacity 0.75s ease-in-out;
+	}
+
+	body.is-preload .spotlight.onload-content-fade-in .video {
+		opacity: 0;
+	}
+
+	
 	.spotlight.onload-image-fade-up .image {
 		-moz-transition: opacity 0.75s ease-in-out, -moz-transform 0.75s ease-in-out;
 		-webkit-transition: opacity 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
@@ -4775,6 +4787,17 @@ input, select, textarea {
 	}
 
 	body.is-preload .spotlight.onload-image-fade-in .image img {
+		opacity: 0;
+	}
+
+	.spotlight.onload-video-fade-in .video video {
+		-moz-transition: opacity 0.75s ease-in-out;
+		-webkit-transition: opacity 0.75s ease-in-out;
+		-ms-transition: opacity 0.75s ease-in-out;
+		transition: opacity 0.75s ease-in-out;
+	}
+
+	body.is-preload .spotlight.onload-video-fade-in .video video {
 		opacity: 0;
 	}
 
@@ -4979,6 +5002,18 @@ input, select, textarea {
 	.spotlight.onscroll-image-fade-in.is-inactive .image img {
 		opacity: 0;
 	}
+
+	.spotlight.onscroll-video-fade-in .video video {
+		-moz-transition: opacity 0.75s ease-in-out;
+		-webkit-transition: opacity 0.75s ease-in-out;
+		-ms-transition: opacity 0.75s ease-in-out;
+		transition: opacity 0.75s ease-in-out;
+	}
+
+	.spotlight.onscroll-video-fade-in.is-inactive .video video {
+		opacity: 0;
+	}
+
 
 /* Spotlight (style1) */
 
@@ -5216,6 +5251,13 @@ input, select, textarea {
 			-webkit-object-position: right;
 			-ms-object-position: right;
 			object-position: right;
+		}
+
+		.spotlight.style1.video-position-right .video video {
+			-moz-object-position: center;
+			-webkit-object-position: center;	
+			-ms-object-position: center;
+			object-position: center;
 		}
 /* Spotlight (style2) */
 
