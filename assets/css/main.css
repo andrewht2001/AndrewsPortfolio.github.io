@@ -8541,14 +8541,14 @@ input, select, textarea {
 	display: flex; /* Use flexbox for layout */
   }
 
-  .heading.style1 .row2 .column .image {
+  .heading.style1 .row2 .column .logo {
 	display: flex;
 	justify-content: right;
 	align-items: center; /* Align items vertically */
   }
 
 
-.heading.style1 .row2 .column .image img {
+.heading.style1 .row2 .column .logo img {
 	padding-left: 1rem; /* Add some padding for better readability */
 	width: auto; /* Set width to 100% */
 	height: 3rem; /* Maintain aspect ratio */
