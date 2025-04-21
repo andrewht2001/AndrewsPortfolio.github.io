@@ -8503,6 +8503,57 @@ input, select, textarea {
   color: white; /* Ensure headings and strong text are also white */
 }
 
+/* Adjusting the layout for .heading.style1 to ensure the .row and .content are inline */
+.heading.style1 {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  align-items: center; /* Align items vertically */
+  padding: 1rem; /* Add some padding for better readability */
+  height: fit-content;
+  width: 100%;
+}
+
+.heading.style1 .content {
+  width: 60%; /* Set width to 60% */
+  text-align: left; /* Align text to the left */
+  height: auto; /* Set height to auto */
+  align-items: center; /* Align items vertically */
+  display: flex; /* Use flexbox for layout */
+}
+
+	.heading.style1 .content h2 {
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+	color: black; /* Set text color to white */
+	font-size: 2rem; /* Set font size for headings */
+	}
+
+.heading.style1 .row2 {
+  width: 40%; /* Set width to 40% */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange columns horizontally */
+  justify-content: right; /* Distribute columns evenly */
+}
+  
+.heading.style1 .row2 .column {
+	width: fit-content; /* Set width to 50% */
+	height: fit-content; /* Set height to auto */
+	display: flex; /* Use flexbox for layout */
+  }
+
+  .heading.style1 .row2 .column .image {
+	display: flex;
+	justify-content: right;
+	align-items: center; /* Align items vertically */
+  }
+
+
+.heading.style1 .row2 .column .image img {
+	padding-left: 1rem; /* Add some padding for better readability */
+	width: auto; /* Set width to 100% */
+	height: 3rem; /* Maintain aspect ratio */
+  }
+
 /* Wrapper */
 
 	#wrapper {
