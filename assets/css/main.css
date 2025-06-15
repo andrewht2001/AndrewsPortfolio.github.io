@@ -2202,6 +2202,10 @@ input, select, textarea {
 		box-shadow: inset 0 0 0 2px rgba(54, 54, 54, 0.2);
 		color: #3e3e3e !important;
 	}
+	.button.style3{
+		background-color: black;
+		color: #ffffff !important;
+	}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2810,6 +2814,14 @@ input, select, textarea {
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column;
+			margin-left: 0;
+		}
+
+		ul.actions.horizontal {
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
 			margin-left: 0;
 		}
 
