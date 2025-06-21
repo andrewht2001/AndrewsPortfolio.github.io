@@ -96,8 +96,8 @@
 				})();
 
 	// Smooth scroll.
-		$('.smooth-scroll').scrolly();
-		$('.smooth-scroll-middle').scrolly({ anchor: 'middle' });
+		$('.smooth-scroll').scrolly({ speed: 0 });
+		$('.smooth-scroll-middle').scrolly({ anchor: 'middle', speed: 0 });
 
 	// Wrapper.
 		$wrapper.children()
@@ -356,4 +356,56 @@ document.addEventListener('DOMContentLoaded', function () {
   }, { threshold: 0.2 });
 
   videoElements.forEach(video => observer.observe(video));
+});
+
+// Navigation Bar Active Link Highlighting
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('#main-nav ul li a');
+
+    function changeLinkState() {
+        let index = sections.length;
+
+        while(--index && window.scrollY + 70 < sections[index].offsetTop) {} // Adjusted offset for fixed nav
+
+        navLinks.forEach((link) => link.classList.remove('active'));
+        
+        // Ensure the link to be activated exists
+        if (navLinks[index]) {
+            navLinks[index].classList.add('active');
+        }
+    }
+
+    // Initial call to set active link on page load/refresh
+    if (sections.length > 0 && navLinks.length > 0) {
+        changeLinkState();
+        window.addEventListener('scroll', changeLinkState);
+    }
+});
+
+// Hamburger menu toggle for mobile nav
+
+document.addEventListener('DOMContentLoaded', function () {
+  const hamburger = document.getElementById('hamburger-menu');
+  const nav = document.getElementById('main-nav');
+  const body = document.body;
+
+  if (hamburger && nav) {
+    hamburger.addEventListener('click', function () {
+      const isOpen = nav.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      body.classList.toggle('nav-open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Close nav when a link is clicked (for mobile UX)
+    nav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function () {
+        nav.classList.remove('open');
+        hamburger.classList.remove('open');
+        body.classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 });

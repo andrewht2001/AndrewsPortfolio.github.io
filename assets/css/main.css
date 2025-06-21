@@ -7,6 +7,151 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+/* Add styles for the navigation bar */
+#main-nav {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  background: rgba(0, 0, 0, 0.8) !important; /* Semi-transparent black background */
+  padding: 10px 0 !important;
+  z-index: 10000 !important; /* Ensure it stays on top */
+  text-align: center !important;
+}
+
+#main-nav ul {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline-block !important; /* Center the list */
+}
+
+#main-nav ul li {
+  display: inline-block !important; /* Arrange items horizontally */
+  margin: 0 10px !important;
+}
+
+#main-nav ul li a {
+  color: #fff !important; /* White text color */
+  text-decoration: none !important;
+  font-size: 0.9em !important;
+  padding: 8px 15px !important;
+  border-radius: 100px !important;
+  transition: background-color 0.3s ease !important;
+}
+
+#main-nav ul li a:hover,
+#main-nav ul li a.active { /* Style for active link */
+  background-color: #555 !important; /* Darker background on hover/active */
+}
+
+/* Adjust body padding to prevent content from being hidden behind the fixed nav bar */
+body.has-fixed-nav { /* Added a class to target body only when nav is present */
+  padding-top: 60px !important; /* Adjust this value based on the height of your nav bar */
+}
+
+/* Hamburger menu styles */
+#hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 11000;
+}
+#hamburger-menu .bar {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 900px) {
+  #hamburger-menu {
+	display: flex;
+	z-index: 11001;
+  }
+  #main-nav {
+	display: none;
+	flex-direction: column !important;
+	align-items: center !important;
+	background: rgba(0,0,0,0.97) !important;
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	right: 0 !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	z-index: 11000 !important;
+	padding-top: 0 !important;
+	box-shadow: none !important;
+  }
+  #main-nav.open {
+	display: flex !important;
+  }
+  #main-nav ul {
+	display: flex !important;
+	flex-direction: column !important;
+	align-items: center !important;
+	width: 100% !important;
+	margin-top: 80px !important; /* Push links below hamburger/X */
+	gap: 1.5rem !important;
+  }
+  #main-nav ul li {
+	display: block !important;
+	margin: 0 !important;
+	width: 100% !important;
+	text-align: center !important;
+  }
+  #main-nav ul li a {
+	display: block !important;
+	font-size: 1.2em !important;
+	padding: 18px 0 !important;
+	width: 100% !important;
+	border-radius: 0 !important;
+	background: none !important;
+  }
+  body.has-fixed-nav {
+	padding-top: 0 !important;
+  }
+  html {
+	scroll-padding-top: 0 !important;
+  }
+}
+
+/* Animate hamburger to X when open */
+#hamburger-menu.open .bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+#hamburger-menu.open .bar:nth-child(2) {
+  opacity: 0;
+}
+#hamburger-menu.open .bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Prevent body scroll when nav is open */
+body.nav-open {
+  overflow: hidden;
+}
+
+/* Smooth scrolling behavior */
+/* Prevent nav bar from overlapping section headings when using anchor links */
+html {
+  scroll-padding-top: 70px; /* Adjust to match or slightly exceed nav bar height */
+  scroll-behavior: smooth;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -2823,6 +2968,9 @@ input, select, textarea {
 			-ms-flex-direction: row;
 			flex-direction: row;
 			margin-left: 0;
+			justify-content: center;
+  			align-items: center;
+
 		}
 
 			ul.actions.stacked li {

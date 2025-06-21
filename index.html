@@ -13,10 +13,28 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body class="is-preload has-fixed-nav">
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
+
+				<!-- Hamburger Menu Button for Mobile -->
+				<button id="hamburger-menu" aria-label="Open navigation" aria-expanded="false">
+				  <span class="bar"></span>
+				  <span class="bar"></span>
+				  <span class="bar"></span>
+				</button>
+
+				<nav id="main-nav" class="mobile-nav">
+				  <ul>
+				    <li><a href="#about">About Me</a></li>
+				    <li><a href="#industrial-design">Industrial Design</a></li>
+				    <li><a href="#healthcare">Healthcare</a></li>
+				    <li><a href="#photography">Photography</a></li>
+					<li><a href="#skills">Skills</a></li>
+				    <li><a href="#get-in-touch">Contact</a></li>
+				  </ul>
+				</nav>
 
 				<!-- One -->
 					<!-- Add a new video class for the banner -->
@@ -26,7 +44,7 @@
 
 							<ul class="actions stacked">
 
-								<li><a href="#first" class="button style1 big wide smooth-scroll-middle">Explore</a></li>
+								<li><a href="#about" class="button style1 big wide smooth-scroll-middle">Explore</a></li>
 							</ul>
 						</div>
 						<div class="video">
@@ -38,7 +56,7 @@
 					</section>
 
 				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left video-position-right onscroll-video-fade-in" id="first">
+					<section class="spotlight style2 orient-right content-align-left video-position-right onscroll-video-fade-in" id="about">
 						<div class="content">
 							<h2>Who am I?</h2>
 							<p>I am a <strong>Product Designer</strong> with experience in <strong>industrial</strong> and <strong>UX/UI design</strong> combining creative problem-solving with technical precision. With experience in product development, rapid prototyping, user interface design, and web development, I’ve had significant roles in projects ranging from multi-million-pound engineering solutions to NHS clinical system interfaces.</p>
@@ -52,8 +70,60 @@
 						</div>
 					</section>
 
+					<section class="heading style1" id="industrial-design">
+						<div class="content">
+							<h2><strong>Industrial Design</strong></h2>
+						</div>
+						<div class="row2">
+							<div class="column">
+								<div class="logo">
+									<img src="images/logos/Solidworks.png" alt="" />
+									<img src="images/logos/markforged.jpg" alt="" />
+									<img src="images/logos/keyshot.jpg" alt="" />
+									<img src="images/logos/figma.png" alt="" />
+									<img src="images/logos/adobe.png" alt="" />
+								</div>
+							</div>
+						</div>			
+					</section>
+					
+						<!-- Six -->
+					
+							<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Talyrond® Redesign</h2>
+							<p><strong>@ Taylor Hobson LTD, Ametek®</strong><br>	
+								The Talyrond®, the world’s first roundness metrology device, remains the industry leader for precision and speed.<br>
+								I led the ergonomic and aesthetic redesign of the product line—from brief to production-ready solution. My focus was on modernising the design language, 
+								improving standing ergonomics by raising the unit height, and streamlining the interface by grouping controls by priority. I ran weekly review sessions 
+								with engineering, marketing, and business development leads to ensure alignment and integrate feedback. Collaboration with Creaform’s Canadian engineering 
+								team supported development and manufacturing readiness.</p>
+						</div>
+						<div class="image">
+							<img src="images/Talyrond685Pro2.jpeg" alt="" />
+						</div>
+					</section>
+					
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>Surface Measurement Device</h2>
+							<p>During my year working professionally as a Design Engineer I was tasked with
+								creating a new aesthetic design for a range of handheld metrology devices.
+								Working with the business development team I put together a range a concepts, with
+								accompanying prototypes, based on consumer feedback, competitor analysis and
+								internal research. I took the project from a loose specification through to well
+								considered, carbon fibre 3D printed model.
+								The original design language of the product range was updated to a two-tone grey
+								with the display as the focal point. The product design need to provide a neutral
+								basis for the localised branding of Ametek’s international partners. The product design needs to provide a neutral basis for the localised branding of Ametek’s international partners.</p>
+						</div>
+						<div class="image">
+							<img src="images/DUOIII&S200.png" alt="" />
+						</div>
+					</section>
+
 					<!-- New Heading Section -->
-					<section class="heading style1">
+					<section class="heading style1" id="healthcare">
 						<div class="content">
 							<h2><strong>Healthcare Experience</strong></h2>
 						</div>
@@ -138,26 +208,11 @@
 							<div class="column">
 								<div class="logo">
 									<img src="images/logos/Solidworks.png" alt="" />
-								</div>
-							</div>
-							<div class="column">
-								<div class="logo">
 									<img src="images/logos/keyshot.jpg" alt="" />
-								</div>
-							</div>
-
-							<div class="column">
-								<div class="logo">
 									<img src="images/logos/figma.png" alt="" />
-								</div>
-							</div>
-
-							<div class="column">
-								<div class="logo">
 									<img src="images/logos/photoshop.png" alt="" />
 								</div>
 							</div>
-
 						</div>			
 					</section>
 
@@ -197,78 +252,10 @@
 					</section>
 					
 					<!-- New Heading Section -->
-					<section class="heading style1">
-						<div class="content">
-							<h2><strong>Design Engineering</strong></h2>
-						</div>
-						<div class="row2">
-							<div class="column">
-								<div class="logo">
-									<img src="images/logos/Solidworks.png" alt="" />
-								</div>
-							</div>
-							<div class="column">
-								<div class="logo">
-									<img src="images/logos/markforged.jpg" alt="" />
-								</div>
-							</div>
-							<div class="column">
-								<div class="logo">
-									<img src="images/logos/keyshot.jpg" alt="" />
-								</div>
-							</div>
-
-							<div class="column">
-								<div class="logo">
-									<img src="images/logos/figma.png" alt="" />
-								</div>
-							</div>
-
-							<div class="column">
-								<div class="logo">
-									<img src="images/logos/adobe.png" alt="" />
-								</div>
-							</div>
-
-						</div>			
-					</section>
-					
-						<!-- Six -->
-					
-							<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Talyrond® Redesign</h2>
-							<p><strong>@ Taylor Hobson LTD, Ametek®</strong><br>	
-								The Talyrond®, the world’s first roundness metrology device, remains the industry leader for precision and speed.<br>
-								I led the ergonomic and aesthetic redesign of the product line—from brief to production-ready solution. My focus was on modernising the design language, 
-								improving standing ergonomics by raising the unit height, and streamlining the interface by grouping controls by priority. I ran weekly review sessions 
-								with engineering, marketing, and business development leads to ensure alignment and integrate feedback. Collaboration with Creaform’s Canadian engineering 
-								team supported development and manufacturing readiness.</p>
-						</div>
-						<div class="image">
-							<img src="images/Talyrond685Pro2.jpeg" alt="" />
-						</div>
-					</section>
 
 <!-- Seven -->
 
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Surface Measurement Device</h2>
-							<p>During my year working professionally as a Design Engineer I was tasked with
-								creating a new aesthetic design for a range of handheld metrology devices.
-								Working with the business development team I put together a range a concepts, with
-								accompanying prototypes, based on consumer feedback, competitor analysis and
-								internal research. I took the project from a loose specification through to well
-								considered, carbon fibre 3D printed model.
-								The original design language of the product range was updated to a two-tone grey
-								with the display as the focal point. The product design need to provide a neutral
-								basis for the localised branding of Ametek’s international partners. The product design needs to provide a neutral basis for the localised branding of Ametek’s international partners.</p>
-						</div>
-						<div class="image">
-							<img src="images/DUOIII&S200.png" alt="" />
-						</div>
-					</section>
+
 					
 					<!-- New Heading Section -->
 					<section class="heading style1">
@@ -321,7 +308,7 @@
 					</section>
 
 					<!-- Nine -->
-					<section class="wrapper style1 align-center">
+					<section class="wrapper style2 align-center">
 						<div class="inner">
 							<h2>Product Gallery</h2>
 							<p>Recent projects, industry work, personal projects, and degree work.</p>
@@ -473,16 +460,38 @@
 										</ul>
 									</div>
 								</article>
-							</div>
+				    </div>
+				  </div>
+				</section>
 
-					</section>
+				<!-- Photography Section -->
+				<section class="wrapper style2 align-center" id="photography">
+				  <div class="inner">
+				    <h2>Photography</h2>
+				    <p>A selection of my photography work.</p>
+				    <div class="gallery style1 large lightbox onscroll-fade-in photo-grid">
+				      <!-- 3x6 grid: 18 images -->
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 1" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 2" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 3" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 4" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 5" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 6" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 7" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 8" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 9" /></a></article>
+				      <article><a href="/images/photography/DSCF1611.JPG" class="image"><img src="/images/photography/DSCF1611.JPG" alt="Photography 10" /></a></article>
 
-					<!-- Ten -->
-					<section class="wrapper style1 align-center">
+				    </div>
+				  </div>
+				</section>
+
+				<!-- Ten -->
+					<section class="wrapper style2 align-center" id="skills">
 						<div class="inner">
 							<h2>Skills</h2>
-							<p>A collection of my skills, everything from <strong>UX design</strong> to <strong>Microsoft 365 Automation</strong></p>
-							<div class="items style1 medium onscroll-fade-in">
+							<p>A collection of my skills, everything from <strong>Industrial design</strong> to <strong>Microsoft 365 Automation</strong></p>
+							<div class="items style3 medium onscroll-fade-in">
 								<section>
 									<span class="icon solid style2 major fa-rocket"></span>
 									<h3>Initiative</h3>
@@ -548,7 +557,7 @@
 					</section>
 
 				<!-- Eleven -->
-					<section class="wrapper style1 align-center">
+					<section class="wrapper style1 align-center" id="get-in-touch">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
 							<form method="post" action="https://api.web3forms.com/submit">
